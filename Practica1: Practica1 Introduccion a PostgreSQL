@@ -1,0 +1,20 @@
+createuser miusuario
+alter role miusuario with password 'XkQyBkZ8';
+\l
+\?
+\h
+\dt
+CREATE DATABASE pract1;
+\c pract1
+\dt
+create table usuarios (
+nombre varchar(30),
+clave varchar(10)
+);
+insert into usuarios(nombre, clave) values('Isa','asdf');
+insert into usuarios(nombre, clave) values('Pablo','jfx344');
+insert into usuarios(nombre, clave) values('Ana','tru3fal');
+\dt
+select * from usuarios;
+\s
+\q
